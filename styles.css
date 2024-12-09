@@ -1,0 +1,90 @@
+/* Estilo principal para el selector de provincia */
+#provincia-envio {
+    margin-top: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo del label */
+#provincia-envio label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Estilo del input y datalist */
+#provincia-envio input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#provincia-envio input:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.5);
+}
+
+/* Estilo del datalist */
+#provincia-envio datalist {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #provincia-envio input {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    #provincia-envio label {
+        font-size: 1em;
+    }
+}
+
+/* Estilo para el área de administración */
+.wrap h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0073aa;
+}
+
+.wrap input[type="number"] {
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.wrap input[type="number"]:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.5);
+}
+
+/* Estilos adicionales */
+#provincia-envio::after {
+    content: "🌍";
+    font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    pointer-events: none;
+}
+
+#provincia-envio {
+    position: relative;
+}
+
+#provincia-envio input {
+    padding-right: 40px;
+}
